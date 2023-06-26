@@ -1,0 +1,24 @@
+lista = [13, -3, 5, 9, 19, 46, 79, 37, -18, 3, 13, 7, 4, 4, -42]
+
+maior_elemento = max(lista)
+print("Maior elemento da lista:", maior_elemento)
+
+menor_elemento = min(lista)
+print("Menor elemento da lista:", menor_elemento)
+
+
+numeros_pares = [num for num in lista if num % 2 == 0]
+print("Números pares da lista:", numeros_pares)
+
+
+primeiro_elemento = lista[0]
+ocorrencias_primeiro_elemento = lista.count(primeiro_elemento)
+print("Número de ocorrências do primeiro elemento da lista:", ocorrencias_primeiro_elemento)
+
+
+media = sum(lista) / len(lista)
+print("Média dos elementos da lista:", media)
+
+
+soma_negativos = sum(num for num in lista if num < 0)
+print("Soma dos elementos negativos da lista:", soma_negativos)
